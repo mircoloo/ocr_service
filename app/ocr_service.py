@@ -1,7 +1,7 @@
-import fitz  # PyMuPDF
+import fitz 
 import asyncio
 
-def extract_text(file_path):  # rimuovi async
+def extract_text(file_path):
     doc = fitz.open(file_path)
     all_text = []
     for page_num, page in enumerate(doc):
